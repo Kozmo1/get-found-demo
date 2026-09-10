@@ -1,171 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Prairie Pantry — New Hamburg</title>
-<meta name="description" content="Local bakery & cafe in New Hamburg. Hours, menu highlights, and how to reach us."/>
-<style>
-  :root {
-    --ink: #1a1a1a;
-    --muted: #5c5c5c;
-    --line: #e8e4de;
-    --bg: #f7f4ef;
-    --card: #ffffff;
-    --accent: #2f6b4f;
-    --accent-dark: #24553f;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-    color: var(--ink);
-    background: var(--bg);
-    line-height: 1.5;
-  }
-  a { color: inherit; }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 0 16px 48px; }
-  header {
-    background: var(--accent);
-    color: #fff;
-    padding: 28px 16px 32px;
-  }
-  header .wrap { padding-bottom: 0; }
-  .badge {
-    display: inline-block;
-    font-size: 12px;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    opacity: .9;
-    margin-bottom: 8px;
-  }
-  h1 { margin: 0 0 6px; font-size: 1.85rem; line-height: 1.15; }
-  .tagline { margin: 0; opacity: .92; font-size: 1rem; }
-  .actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border-radius: 12px;
-    padding: 14px 12px;
-    font-weight: 650;
-    font-size: .95rem;
-  }
-  .btn-primary { background: #fff; color: var(--accent-dark); }
-  .btn-secondary { background: rgba(255,255,255,.14); color: #fff; border: 1px solid rgba(255,255,255,.35); }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 18px 16px;
-    margin-top: 14px;
-  }
-  h2 { margin: 0 0 10px; font-size: 1.05rem; }
-  .muted { color: var(--muted); font-size: .92rem; }
-  .hours { list-style: none; padding: 0; margin: 0; }
-  .hours li {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--line);
-    font-size: .95rem;
-  }
-  .hours li:last-child { border-bottom: 0; }
-  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip {
-    background: #eef6f1;
-    color: var(--accent-dark);
-    border-radius: 999px;
-    padding: 6px 12px;
-    font-size: .85rem;
-    font-weight: 600;
-  }
-  .map {
-    margin-top: 10px;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-    background: #ddd;
-    aspect-ratio: 16/10;
-  }
-  .map iframe { width: 100%; height: 100%; border: 0; }
-  footer {
-    margin-top: 28px;
-    text-align: center;
-    color: var(--muted);
-    font-size: .8rem;
-  }
-  .demo-note {
-    margin-top: 18px;
-    padding: 12px 14px;
-    border-radius: 12px;
-    background: #fff8e8;
-    border: 1px solid #f0e0b0;
-    font-size: .85rem;
-    color: #5a4a20;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearth &amp; Crumb — Artisan Bakery &amp; Cafe · New Hamburg</title>
+  <meta name="description" content="Sourdough, pastries &amp; coffee baked fresh in New Hamburg, ON. Open mornings on Peel Street.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <div class="wrap">
-      <div class="badge">Sample · Get Found package</div>
-      <h1>Prairie Pantry</h1>
-      <p class="tagline">Bakery & cafe · New Hamburg, ON</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="tel:+15195550100">Call</a>
-        <a class="btn btn-secondary" href="sms:+15195550100">Text</a>
-      </div>
+<body class="has-mobile-bar">
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Hearth <span>&amp;</span> Crumb</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="tel:+15195550100">Call</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-drawer" id="nav-drawer" hidden>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="visit.html">Visit</a></li>
+      </ul>
+      <a class="btn btn-primary" href="tel:+15195550100" style="width:100%">Call us</a>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="card">
-      <h2>Open today</h2>
-      <ul class="hours">
-        <li><span>Mon–Fri</span><strong>7:00 AM – 5:00 PM</strong></li>
-        <li><span>Saturday</span><strong>8:00 AM – 3:00 PM</strong></li>
-        <li><span>Sunday</span><strong>Closed</strong></li>
+  <main>
+    <section class="hero" aria-label="Welcome">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80" alt="Fresh artisan bread loaves on a wooden board" width="1200" height="800" fetchpriority="high">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <p class="hero-eyebrow">New Hamburg · Peel Street</p>
+        <h1>Baked fresh in New Hamburg</h1>
+        <p class="hero-sub">Sourdough, pastries &amp; coffee — open mornings on Peel Street</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="tel:+15195550100">Call</a>
+          <a class="btn btn-secondary" href="menu.html">See menu</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust">
+      <ul class="trust-list wrap">
+        <li>Est. 2019</li>
+        <li>Walk-in friendly</li>
+        <li>Catering trays</li>
       </ul>
-      <p class="muted" style="margin:10px 0 0">102 Peel St, New Hamburg</p>
-    </section>
-
-    <section class="card">
-      <h2>What people come for</h2>
-      <div class="chip-row">
-        <span class="chip">Sourdough</span>
-        <span class="chip">Butter tarts</span>
-        <span class="chip">Coffee</span>
-        <span class="chip">Catering trays</span>
-      </div>
-      <p class="muted" style="margin:12px 0 0">Fresh trays for offices and weekend pickups. Ask about Saturday specials.</p>
-    </section>
-
-    <section class="card">
-      <h2>Find us</h2>
-      <div class="map">
-        <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=New+Hamburg+ON+Peel+Street&output=embed"></iframe>
-      </div>
-      <div class="actions" style="margin-top:14px">
-        <a class="btn btn-primary" style="background:var(--accent);color:#fff" href="mailto:hello@example.com">Email</a>
-        <a class="btn btn-secondary" style="background:#f0f0f0;color:var(--ink);border-color:var(--line)" href="https://maps.google.com/?q=New+Hamburg+ON">Directions</a>
-      </div>
-    </section>
-
-    <div class="demo-note">
-      <strong>Demo for Mike Kraemer’s clients.</strong> This is the “Get Found” style: hours, what you sell, map, call/text — built so a customer on their phone knows what to do in 5 seconds. Real builds use Wix or Squarespace under your login.
     </div>
 
-    <footer>
-      Built for Canadian Main Street shops · Sample only
-    </footer>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Favourites</p>
+          <h2>What locals come back for</h2>
+          <p class="muted">Slow-fermented loaves, buttery pastry, and coffee worth lingering over.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=1200&q=80" alt="Crusty country sourdough loaf" width="600" height="450" loading="lazy">
+            <div class="card-body">
+              <h3>Weekend sourdough</h3>
+              <p>Country loaves pulled from the oven Friday &amp; Saturday — arrive early.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1519914212810-bec308b4c3a3?w=1200&q=80" alt="Golden butter tarts on a plate" width="600" height="450" loading="lazy">
+            <div class="card-body">
+              <h3>Butter tarts</h3>
+              <p>Classic Ontario sweetness — flaky shells, gooey centres, baked daily.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1200&q=80" alt="Assorted pastry tray for catering" width="600" height="450" loading="lazy">
+            <div class="card-body">
+              <h3>Office catering</h3>
+              <p>Breakfast trays &amp; pastry boxes for Wilmot &amp; KW meetings.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap story">
+        <img class="story-img" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&q=80" alt="Warm bakery cafe interior with wooden tables" width="800" height="640" loading="lazy">
+        <div class="story-copy">
+          <p class="eyebrow">Our story</p>
+          <h2>A neighbourhood hearth on Peel Street</h2>
+          <p class="muted">Hearth &amp; Crumb started as a tiny morning bake for New Hamburg neighbours — wild yeast, local flour, and coffee that doesn’t rush you. We’re still small on purpose: one oven, one street, and bread that tastes like someone cared.</p>
+          <a class="btn btn-outline" href="visit.html">Plan your visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Hungry? We’re open today.</h2>
+        <p>Walk in for coffee &amp; pastry — or call ahead for loaves and trays.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn-secondary" href="tel:+15195550100">Call (519) 555-0100</a>
+          <a class="btn btn-secondary" href="visit.html">Hours &amp; directions</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="logo" href="index.html">Hearth <span>&amp;</span> Crumb</a>
+      <p>102 Peel St · New Hamburg, ON</p>
+      <p class="footer-note">Sample Get Found brochure · built for Canadian Main Street shops</p>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" role="navigation" aria-label="Quick actions">
+    <a class="btn btn-primary" href="tel:+15195550100">Call</a>
+    <a class="btn btn-outline" href="https://maps.google.com/?q=102+Peel+St+New+Hamburg+ON" target="_blank" rel="noopener">Directions</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
