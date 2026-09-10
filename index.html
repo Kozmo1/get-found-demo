@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Prairie Pantry — New Hamburg</title>
+<meta name="description" content="Local bakery & cafe in New Hamburg. Hours, menu highlights, and how to reach us."/>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #e8e4de;
+    --bg: #f7f4ef;
+    --card: #ffffff;
+    --accent: #2f6b4f;
+    --accent-dark: #24553f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 16px 48px; }
+  header {
+    background: var(--accent);
+    color: #fff;
+    padding: 28px 16px 32px;
+  }
+  header .wrap { padding-bottom: 0; }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    opacity: .9;
+    margin-bottom: 8px;
+  }
+  h1 { margin: 0 0 6px; font-size: 1.85rem; line-height: 1.15; }
+  .tagline { margin: 0; opacity: .92; font-size: 1rem; }
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 14px 12px;
+    font-weight: 650;
+    font-size: .95rem;
+  }
+  .btn-primary { background: #fff; color: var(--accent-dark); }
+  .btn-secondary { background: rgba(255,255,255,.14); color: #fff; border: 1px solid rgba(255,255,255,.35); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 16px;
+    margin-top: 14px;
+  }
+  h2 { margin: 0 0 10px; font-size: 1.05rem; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  .hours { list-style: none; padding: 0; margin: 0; }
+  .hours li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: .95rem;
+  }
+  .hours li:last-child { border-bottom: 0; }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: #eef6f1;
+    color: var(--accent-dark);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: .85rem;
+    font-weight: 600;
+  }
+  .map {
+    margin-top: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #ddd;
+    aspect-ratio: 16/10;
+  }
+  .map iframe { width: 100%; height: 100%; border: 0; }
+  footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: .8rem;
+  }
+  .demo-note {
+    margin-top: 18px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: #fff8e8;
+    border: 1px solid #f0e0b0;
+    font-size: .85rem;
+    color: #5a4a20;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="badge">Sample · Get Found package</div>
+      <h1>Prairie Pantry</h1>
+      <p class="tagline">Bakery & cafe · New Hamburg, ON</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+15195550100">Call</a>
+        <a class="btn btn-secondary" href="sms:+15195550100">Text</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Open today</h2>
+      <ul class="hours">
+        <li><span>Mon–Fri</span><strong>7:00 AM – 5:00 PM</strong></li>
+        <li><span>Saturday</span><strong>8:00 AM – 3:00 PM</strong></li>
+        <li><span>Sunday</span><strong>Closed</strong></li>
+      </ul>
+      <p class="muted" style="margin:10px 0 0">102 Peel St, New Hamburg</p>
+    </section>
+
+    <section class="card">
+      <h2>What people come for</h2>
+      <div class="chip-row">
+        <span class="chip">Sourdough</span>
+        <span class="chip">Butter tarts</span>
+        <span class="chip">Coffee</span>
+        <span class="chip">Catering trays</span>
+      </div>
+      <p class="muted" style="margin:12px 0 0">Fresh trays for offices and weekend pickups. Ask about Saturday specials.</p>
+    </section>
+
+    <section class="card">
+      <h2>Find us</h2>
+      <div class="map">
+        <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=New+Hamburg+ON+Peel+Street&output=embed"></iframe>
+      </div>
+      <div class="actions" style="margin-top:14px">
+        <a class="btn btn-primary" style="background:var(--accent);color:#fff" href="mailto:hello@example.com">Email</a>
+        <a class="btn btn-secondary" style="background:#f0f0f0;color:var(--ink);border-color:var(--line)" href="https://maps.google.com/?q=New+Hamburg+ON">Directions</a>
+      </div>
+    </section>
+
+    <div class="demo-note">
+      <strong>Demo for Mike Kraemer’s clients.</strong> This is the “Get Found” style: hours, what you sell, map, call/text — built so a customer on their phone knows what to do in 5 seconds. Real builds use Wix or Squarespace under your login.
+    </div>
+
+    <footer>
+      Built for Canadian Main Street shops · Sample only
+    </footer>
+  </main>
+</body>
+</html>
