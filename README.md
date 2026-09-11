@@ -23,4 +23,18 @@ Romantic florist brochure (Fergus vibe). Owned storefront look — the wire cata
 - Local: open `florist/index.html`
 - Live: [https://kozmo1.github.io/get-found-demo/florist/](https://kozmo1.github.io/get-found-demo/florist/)
 
-After merge, GitHub Pages publishes from `main`. The salon and florist demos live at `/salon/` and `/florist/` on the same Pages site — they do not replace the bakery home.
+## Trades — Summit Mechanical
+
+Contractor brochure (KW / Wilmot vibe): plumbing, electrical, reno. Bold navy/charcoal — not the salon or florist look. Send trades prospects straight to this URL.
+
+- Local: open `trades/index.html`
+- Live: [https://kozmo1.github.io/get-found-demo/trades/](https://kozmo1.github.io/get-found-demo/trades/)
+
+After merge, GitHub Pages publishes from `main`:
+
+| Demo | Path |
+| --- | --- |
+| Bakery (Hearth & Crumb) | `/` |
+| Salon (Studio Lumen) | `/salon/` |
+| Florist (Atelier Blooms) | `/florist/` |
+| Trades (Summit Mechanical) | `/trades/` |
