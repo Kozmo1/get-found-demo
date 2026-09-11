@@ -19,7 +19,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 0.5rem); }
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -100,7 +100,7 @@ p { margin: 0 0 1em; }
   color: var(--muted);
 }
 .nav-links a:hover { color: var(--ink); }
-.nav-cta { display: none; min-width: 6.5rem; }
+.nav-cta.btn { display: none; min-width: 6.5rem; }
 .nav-toggle {
   width: 44px; height: 44px; border: 1px solid var(--line);
   background: var(--paper); border-radius: var(--radius);
@@ -127,7 +127,8 @@ p { margin: 0 0 1em; }
 .nav-drawer a { font-size: 1.05rem; font-weight: 500; }
 .nav-drawer .btn { width: 100%; }
 @media (min-width: 768px) {
-  .nav-links, .nav-cta { display: flex; }
+  .nav-links { display: flex; }
+  .nav-cta.btn { display: inline-flex; }
   .nav-toggle, .nav-drawer { display: none !important; }
 }
 
@@ -186,6 +187,7 @@ p { margin: 0 0 1em; }
 .frame--lashes {
   background: linear-gradient(165deg, #ece4df, #cfc0b8 55%, #8f746c);
 }
+.frame--lashes img { object-position: 50% 12%; }
 .frame--brows {
   background: linear-gradient(165deg, #f3ebe4, #e0cfc6, #a8887e);
 }
