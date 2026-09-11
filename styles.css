@@ -252,3 +252,6 @@ body.has-mobile-bar { padding-bottom: 5.5rem; }
 }
 .site-footer .logo { display: inline-block; margin-bottom: 0.5rem; color: var(--espresso); }
 .footer-note { margin-top: 1rem; font-size: 0.75rem; opacity: 0.8; max-width: 28rem; margin-inline: auto; }
+.demo-switch { margin-top: 0.7rem; font-size: 0.75rem; letter-spacing: 0.06em; }
+.demo-switch a { text-decoration: underline; text-underline-offset: 3px; opacity: 0.85; }
+.demo-switch a:hover { opacity: 1; color: var(--terracotta); }
