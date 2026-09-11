@@ -173,7 +173,11 @@ p { margin: 0 0 1em; }
   object-fit: cover; object-position: 50% 42%;
 }
 .frame--tulips { background: linear-gradient(165deg, #dfe6d4, #7a8f78 60%, #3d4d3c); }
-.frame--iris { background: linear-gradient(180deg, #ece8df, #c4b8ad); }
+.frame--iris { background: #ece8df; }
+.frame--iris img {
+  object-fit: contain;
+  object-position: center;
+}
 .frame--table { background: linear-gradient(165deg, #d4dce8, #4a5a72); }
 .frame--shop { background: linear-gradient(135deg, #e6e0d4, #9aa88c); }
 .frame--blossom { background: linear-gradient(145deg, #f0e4ea, #c9a3b0); }
@@ -182,8 +186,10 @@ p { margin: 0 0 1em; }
 .hero { display: grid; }
 .hero-copy {
   padding: 2.75rem 0 2.25rem;
-  max-width: 40rem;
+  text-align: center;
 }
+.hero-copy .lede { margin-inline: auto; }
+.hero-copy .btn-row { justify-content: center; }
 .hero-copy h1 {
   font-size: clamp(3.1rem, 13vw, 6.2rem);
   margin-bottom: 0.3em;
