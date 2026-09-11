@@ -65,7 +65,7 @@ p { margin: 0 0 1em; }
   position: sticky; top: 0; z-index: 100;
   height: var(--nav-h);
   display: flex; align-items: center;
-  background: rgba(244, 239, 233, 0.88);
+  background: rgba(244, 239, 233, 0.96);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
 }
@@ -178,6 +178,7 @@ p { margin: 0 0 1em; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 18%;
 }
 .frame--nails {
   background: linear-gradient(165deg, #f0e4dc, #d7b7ad 60%, #b58d84);
