@@ -16,4 +16,11 @@ High-end nails / lashes / brows / waxing brochure (Elora vibe). Separate visual 
 - Local: open `salon/index.html`
 - Live: [https://kozmo1.github.io/get-found-demo/salon/](https://kozmo1.github.io/get-found-demo/salon/)
 
-After merge, GitHub Pages publishes from `main`. The salon demo is at the `/salon/` path on the same Pages site — it does not replace the bakery home.
+## Florist — Atelier Blooms
+
+Romantic florist brochure (Fergus vibe). Owned storefront look — the wire catalog can stay the backend. Distinct from both bakery and salon.
+
+- Local: open `florist/index.html`
+- Live: [https://kozmo1.github.io/get-found-demo/florist/](https://kozmo1.github.io/get-found-demo/florist/)
+
+After merge, GitHub Pages publishes from `main`. The salon and florist demos live at `/salon/` and `/florist/` on the same Pages site — they do not replace the bakery home.
